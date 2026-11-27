@@ -1,0 +1,19 @@
+# ============================================================================
+# dsh-bili-whale —— DSH bundle patch
+# ============================================================================
+# 插件挂载声明：DSH 启动时把本插件插进 profile 的配置树。
+#
+# 安装（本地开发，link 到源码目录）：
+#   dsh plugin --profile desktop add "link:C:\\Users\\<你>\\.dsh\\plugins\\dsh-bili-whale"
+# 或发布后：
+#   dsh plugin --profile desktop add dsh-bili-whale
+#
+# ⚠️ `name:` 必须与安装后的**包名**完全一致（这里是 dsh-bili-whale），否则表现为
+#    「装上了但设置页 404」。
+# 装完后在 DSH 里打开：**设置 → 养鱼**（插件设置页）。
+#   ⚠️ 旧文档里写的 http://127.0.0.1:<DSH 端口>/dsh-bili/ 已失效（404 白屏），不要再照那个地址开。
+# ============================================================================
+
+- insert:
+    - id: dsh-bili-whale
+      name: dsh-bili-whale
