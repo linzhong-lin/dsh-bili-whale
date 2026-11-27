@@ -1,0 +1,46 @@
+{
+  "name": "dsh-bili-whale",
+  "version": "1.0.1",
+  "description": "DSH B站插件：持续浏览、动态记忆、自我归纳与有证据的心情和分享欲。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "bilibili",
+    "agent",
+    "diary"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "behavior",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md",
+    "LIFE-STATE-CONTRACT.md",
+    "vendor",
+    "stickers"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": "^22.13.0 || >=23.4.0"
+  }
+}
